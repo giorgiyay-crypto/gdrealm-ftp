@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ftp-backend-service
+    env: docker
+    plan: free # Or your chosen tier
+    disk:
+      name: web-storage
+      mountPath: /home/ftpuser/www
+      sizeGB: 1
